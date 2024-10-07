@@ -1,3 +1,7 @@
+The cash register is a boring computer designed for efficiency. The
+Dybo, both software and hardware, wants to bring this efficiency
+to teachers and students to manage their job of teaching and learning.
+
 Doc's Dybo repository about documentation, technical notes, essays,
 presentation.
 
