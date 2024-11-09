@@ -1,4 +1,4 @@
-﻿**The Dynabook App**
+﻿**The Dybo App**
 
 > The cash register of education
 
@@ -7,12 +7,12 @@
 
 The cash register is a streamlined computer designed for efficiency within
 a restricted context. The
-Dynabook, both software and hardware, wants to bring this kind of efficiency
+Dybo, both software and hardware, wants to bring this kind of efficiency
 to teachers and students to manage their job of teaching and learning.
 
-![A closed Dynabook](images/image2-sm.png)
+![A closed Dybo](images/image2-sm.png)
 
-The Dynabook App is the main user application of the Dynabook
+The Dybo App is the main user application of the Dybo
 device. It is through this app that teachers and students interact the
 most. Its features are interconnected to maximize user comfort and to
 save time. It anticipates the needs of the teacher or student
@@ -193,7 +193,7 @@ share her understanding with others? How can he/she...
 
 ## Documents
 
-The content of the Dynabook is organized in interactive document
+The content of the Dybo is organized in interactive document
 objects.
 
 ![A document with live objects annotated](images/image15.png)
@@ -258,7 +258,7 @@ decided later once the overall model stabilizes (Sqlite, XML,etc).
 # GUI Layout
 
 Describe GUI layouts and flows between the different parts of the
-Dynabook app.
+Dybo app.
 
 ## Home Page
 
@@ -272,15 +272,15 @@ sort differently.
 
 A click on an item opens the document or the task page. The top bar
 and its buttons Start, Agenda, Binder and Preferences are always
-visible all along the workflow in the Dynabook app.
+visible all along the workflow in the Dybo app.
 
 ## Task Page
 
 ![Task page](images/image4.png)
 
 In the task page, the user quickly adds a task for the next
-course. The Dynabook tries to guess the class, the day and the period
-according to the current date and time. If Dynabook guessing is wrong,
+course. The Dybo tries to guess the class, the day and the period
+according to the current date and time. If Dybo guessing is wrong,
 it can be adjusted from the drop down lists.
 
 The task can be handwritten, so the user can easily draw some
@@ -312,7 +312,7 @@ Therefore, the binder of a class group/course association is
 represented as a collection of folders (class group, course, topics)
 and files (documents).
 
-The Dynabook tries to guess the appropriate class group, courses and
+The Dybo tries to guess the appropriate class group, courses and
  topic to present to the user when the binder is opened. The guess is
  based on the current time of the day, the user schedule and the last
  edited documents. If the guess is not appropriate, the user can
@@ -348,7 +348,7 @@ necessary to the application, to meaningfully present the information
 to its user.
 
 The user navigates the data with breadcrumbs starting with the top
-level ‘Dynabook’ object. From there she navigates the interdependent
+level ‘Dybo’ object. From there she navigates the interdependent
 objects presented in panels with editable fields for single instance
 objects and decorated panels for collection of instances. The
 educational documents associated with these objects are discarded by
@@ -426,9 +426,9 @@ its edition.
 
 ## Concept
 
-![Dynabook concept, laptop mode](images/image18.png)
+![Dybo concept, laptop mode](images/image18.png)
 
-![Dynabook concept, notebook mode](images/image6.png)
+![Dybo concept, notebook mode](images/image6.png)
 
 
 # Annexes
@@ -438,25 +438,22 @@ its edition.
 A mere schedule to develop and to test iteratively. It is in
 chronological order, however the points overlap.
 
-* Develop the Dynabook app
-* Test Dynabook app in school and iterate with the development (1 or 2
+* Develop the Dybo app
+* Test Dybo app in school and iterate with the development (1 or 2
   users)
 * Develop hardware prototype with existing hardware
-* Develop Dynabook operating system
-* Test Dynabook app in school and iterate with the development (tenth
+* Develop Dybo operating system
+* Test Dybo app in school and iterate with the development (tenth
   of users)
-* Test Dynabook in school and iterate on the hardware and software (1
+* Test Dybo in school and iterate on the hardware and software (1
   or 2 users)
-* Test Dynabook hardware and software with one classroom (30 users,
+* Test Dybo hardware and software with one classroom (30 users,
   students and teachers)
 
 ## A2. People to contact
 
 * Caula, David (imppao), graphisme
-* Dickey, Ken (ken.dickey@whidbey.com), Smalltalker
 * Goldberg, Adele (), Smalltalk author, educator
 * Lup Yuen Lee, (@lupyuen@qoto.org), Pine phone hardware
 * MNT Research, CEO (@mntmn@mastodon.social), open hardware laptop
 * Oberson, Paul, SEM prospective
-* Pettiaux, Nicolas (@npettiaux@mamot.fr), advocacy
-* Vuletich, Juan (juan@cuis.st), Cuis-Smalltalk architect
