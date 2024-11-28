@@ -276,6 +276,7 @@ Below, samples of preliminary works on the paper morph handwriting:
 Live demonstration https://mamot.fr/@drgeo/113340317300995188
 
 ![Handwritten text](images/image8.png) ![Handwritten text](images/image7.png)
+
 ![Handwritten text](images/image9.png)
 
 
