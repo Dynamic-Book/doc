@@ -55,91 +55,106 @@ These are the objects describing the educational management, not the
 educational content; the administrative facets of the teacher and
 student roles.
 
-**App**
-Class `DyUserData`
+**App** (class `DyUserData`)
 * user (Person)
 * schools (1st school of the collection is the default one if required)
 * agenda
 
-In the Dybo host disk, the root of the App is given by the global
-method `DySystem userDataPath`. This object and its attributes are
-saved in the file *data.ob*.
+In the Dybo host disk, the root of the unique App instance is given by
+its message `#directory`. It returns the same directory entry as
+`DySystem userDataPath`. This object and its attributes are saved in
+the file *data.ob*.
 
-**School**
+**School** (class `DySchool`)
 
 Description of the user's educational institutions. Possibly several
 per user.
 
-* school name
-* others, free field
-* time slots
-* classes
+* name
+* phone
+* email 
+* timeSlots
+* classGroups
 
 There is a default school establishment per user application, the 1st
 one in the schools’ App collection attribute. Put together the courses
 collection of the schools defines the schedule of the user (teacher or
 student).
 
-**Time slot**
+Each school instance has its own directory in the Dybo host disk, its
+location is returned by the message `aSchool directory`. All these
+school's directories are located in the App directory.
+
+**Time slot** (class `DyTimeSlot`)
 
 Describe the organization of the teaching periods in a school. A
 description per establishment is possible or for all of the user's
 establishments when they share the same hourly organization. There are
 generally 10 time slots (Geneva).
 
-* name of the period (P1, P2, or H1, H2, etc.)
-* start time
-* end time
+* name (of the period P1, P2, or H1, H2, etc.)
+* startTime
+* endTime
 
-**Course hour**
+**Course hour** (class `DyCourseHour`)
 
 Describes one or more contiguous teaching periods.
 
 * room
-* day of the week
-* time slots
+* dayOfWweek
+* timeSlots
 
-**Course**
+**ClassGroup** (class `DyClassGroup`)
+
+It describes a class: list of students and taught courses.
+
+* number
+* headTeacher(s) (person(s))
+* students (persons)
+* courses
+
+Each class group instance has its own directory in the Dybo disk,
+returned by the `#directory` message. Each class group directory is
+located in its parent school directory.
+
+
+**Course** (class `DyCourse`)
 
 It is useful for the teacher and student to describe all of their
 courses.
 
 * subject (the taught subject name)
 * color (distinctive attribute)
-* teacher (person type), relevant for student user only
-* course hours
+* teacher (person, relevant for student user only)
+* courseHours
 * topics (a collection of topic objects taught in this course)
 
-**ClassGroup**
+Each course instance has its own directory in the Dybo disk, returned
+by the `#directory` message. Each course directory is located in its
+parent class group directory.
 
-It describes a class: list of students, taught courses.
-
-* class number
-* head teacher(s) (person(s))
-* students (persons)
-* courses
-
-**Person**
+**Person** (class `DyPerson`)
 
 In the Person hierarchy:
 
-* last name
-* first names
-* email address
+* lastName
+* firstName
+* email
 
-There are two types of people in this hierarchy, teacher and student.
+There are two types of people in this hierarchy, teacher and
+student. Person instances can be sorted in a collection.
 
-**Teacher**
-
-Described in the school instances
-
-**Student**
+**Teacher** (class `DyTeacher`)
 
 Described in the school instances
+
+**Student** (class `DyStudent`)
 
 ## Calendar
 
 **Schedule**
+
+*Not implemented yet.*
 
 Informs about the schedule of the teacher or student. The schedule is
 automatically established from the Courses data. It is therefore not a
@@ -147,44 +162,51 @@ set of data but an object capable of extracting this schedule
 information. It provides an interface to respond to queries like "What
 are the next periods of this course?"
 
-**Agenda**
+**Agenda** (class `DyAgenda`)
 
 The place to record teacher assignments (tasks. It follows the user
 times slots as:
 
-* start date of the school year
-* end date
-* days off, a collection of Timespan
-* tasks (homework)
+* start (back-to-school day)
+* end  (end-of-school day)
+* daysOff (collection of DyDayInterval instances)
+* tasks (homework, collection of Task instances)
 
-**Task**
+**Task** (class `DyTask`)
 
 Describe a task (homework) for a given course, the related course is
-determined given the time slot and date.
+determined by the time slot and the date.
 
 * date
-* time slot
+* timeSlot
 * document
+
+All tasks share the same directory returned by the message
+`#directory`, located in the App directory.
 
 ## Educational
 
-These objects describe where and how the educational contents are
+These objects describe where and how the educational documents are
 organized.
 
 **Binder**
 
-**Likely the Binder object is not necessary. Its attribuetd could added as attributes to the Course class.**
+A binder is a logical construction (it is computed) to present the
+educational materials related to the user schools, class groups,
+courses, topics and documents instances.
 
-A binder contains the educational materials related to a given course. 
-
-* last (the last edited document)
-* resources (collection of associated resources as textbook and workbook)
-* topics
-
-**Topic**
+**Topic** (class `DyTopic`)
 
 * title
+* color
 * documents
+* resources 
+
+Each topic instance has its own directory in the Dybo disk, returned
+by the `#directory` message. Each topic directory is located in its
+parent course directory. In this directory are located all the
+documents data, each one in its own folder.
+
 
 # Knowledge Objects
 
@@ -202,45 +224,52 @@ objects.
 
 ![A document with live objects annotated](images/image15.png)
 
-**Document**
+**Document** (classes `Document`, `DocumentModel`, `DocumentView`)
 
 It is the root of a tree of Morphs. In a document, diversified Morphs
 can be inserted including Dynamic Media described with Smalltalk
 code. The document is organized in disjoint pages.
 
-**Page**
+A document instance informs about its folder with the message
+`#dirName`. Its complete directory entry depends on the context of its
+creation; if created as a document of a task, it is appended to the
+directory task, if created as a document in a topic, it is appended to
+the topic directory.
 
-This Morph is a unit of a Document, this is the main place for
-handwriting. It is constituted of two layers :
 
-* A background morph and a paper (morph) of an extent identical to the
-page it is attached too. Examples of background morph are plain color,
-calculated (grid, writing lines, music scope, etc), external resources
-as a PDF document or still picture.
+**Page** (class `PageMorph`, `PageModel` hierarchy)
 
-* A paper morph, it contains the user handwriting.
+This Morph is a unit of a Document, this is the main place to
+hand write. It is constituted of two layers :
 
-A page can invoke the document toolbar to operate on it: pen, marker, eraser,
-color and dedicated tools for handwriting operations.
+* A page model morph (`PageModel`) and a paper (`PaperMorph`) with
+extents identical to the page's extent it is attached too. Examples of
+page model are plain color, calculated (grid, writing lines, music
+scope, etc), PDF model.
+
+* The paper morph contains the user handwriting.
+
+The user operates on a page with the document toolbar: pen, marker,
+eraser, color and dedicated tools for handwriting operations.
 
 Additionally, in a page, the user can insert a kind of PlacedMorph (a
-Morph with a location), a view decorated with its own paper Morph, to
-retain contextualized and attached handwritten annotations.
+Morph with a location), decorated with its own paper Morph, to retain
+contextualized and attached handwritten annotations. The decorator is
+an `AnnotatorMorph`, a special kind of Paper Morph
 
-**Paper**
+**Paper** (class `PaperMorph`)
 
 An object for handwriting. Each hand strokes between a pen down and a
 pen up actions are recorded as strokes collected in a stroke group. The
 paper morph contains all these stroke group morphs. Each group
 contains individual stroke morphs, which are Bézier curves.
 
-A paper morph can decorate a target Morph (DrGeoView, etc.) to attach
-user handwriting. Ideally a sub-morph of the target Morph should also
-be attached to user handwriting.
+A special paper morph -- the `AnnotatorMorph` -- can decorate a target
+Morph (DrGeoView, etc.) to attach user handwriting. Ideally each
+submorph of the target Morph should also receive handwritten
+annotations.
 
-The target morph and the hand strokes
-are both attached to the paper morph object which itself is attached
-to a page.
+The annotator morphs are inserted in the paper of the page.
 
 Below, samples of preliminary works on the paper morph handwriting:
 
@@ -250,14 +279,15 @@ Below, samples of preliminary works on the paper morph handwriting:
 
 ![Handwritten text](images/image9.png)
 
-https://mamot.fr/system/media_attachments/files/110/129/414/451/277/255/original/c675cb84990e1108.mp4
+https://mamot.fr/@drgeo/113340317300995188
 
 ## Storage
 
-The storage on disk is organized in folders, sub-folders and
-objects. For fast iterations objects are saved as ReferenceStream
-and/or SmartReferenceStream. A more durable file format could be
-decided later once the overall model stabilizes (Sqlite, XML,etc).
+The storage on disk is organized in directories, sub-directories and
+objects. For fast prototyping, the objects are saved as
+ReferenceStream and/or SmartReferenceStream. A more durable file
+format may be decided later once the overall model stabilize
+(Sqlite, XML,etc).
 
 # GUI Layout
 
