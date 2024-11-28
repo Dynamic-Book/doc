@@ -56,10 +56,14 @@ educational content; the administrative facets of the teacher and
 student roles.
 
 **App**
-
+Class `DyUserData`
 * user (Person)
 * schools (1st school of the collection is the default one if required)
 * agenda
+
+In the Dybo host disk, the root of the App is given by the global
+method `DySystem userDataPath`. This object and its attributes are
+saved in the file *data.ob*.
 
 **School**
 
@@ -101,10 +105,10 @@ It is useful for the teacher and student to describe all of their
 courses.
 
 * subject (the taught subject name)
-* distinctive attributes (color or other)
+* color (distinctive attribute)
 * teacher (person type), relevant for student user only
 * course hours
-* binder
+* topics (a collection of topic objects taught in this course)
 
 **ClassGroup**
 
