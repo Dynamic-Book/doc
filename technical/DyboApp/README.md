@@ -292,7 +292,7 @@ format may be decided later once the overall model stabilize
 # GUI Layout
 
 Describe GUI layouts and flows between the different parts of the
-Dybo app.
+Dybo app. Sketches and implementation views in the next sections.
 
 ## Home Page
 
