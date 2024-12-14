@@ -310,7 +310,8 @@ visible all along the workflow in the Dybo app.
 
 ## Task Page
 
-![Task page](images/image4.png)
+![Task sketch](images/image4.png)
+![Task view](images/taskView.png)
 
 In the task page, the user quickly adds a task for the next
 course. The Dybo tries to guess the class, the day and the period
@@ -324,7 +325,8 @@ previous task page.
 
 ## Binder
 
-![Binder page](images/image12.png)
+![Binder sketch](images/image12.png)
+![Binder view](images/binderView.png)
 
 From the binder view, the user finds the class groups, then in each
 one its related courses.  For each association of class group/course,
@@ -360,7 +362,8 @@ courses drop down menu is missing.
 
 ## Document Editor
 
-![Document editor](images/image3.png)
+![Document sketch](images/image3.png)
+![Document view](images/documentView.png)
 
 In the document editor, the user can annotate imported PDF
 documents. On the top of its view, a horizontal toolbar gives access
@@ -375,7 +378,8 @@ its circular sub-toolbars.
 
 ## Preferences Editor
 
-![Business objects editor](images/image5.png)
+![Settings editor sketch](images/image5.png)
+![Settings editor view](images/settingsView.png)
 
 In the preference editor, the user browses in the administrative data
 necessary to the application, to meaningfully present the information
