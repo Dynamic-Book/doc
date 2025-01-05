@@ -409,6 +409,7 @@ A set of widgets to develop.
 **DecoratedPluggableMorph**
 
 ![Decorated panel](images/image10.png)
+![Dybo decorated panel featuring several Dybo documents and two action buttons to edit new empty document and to import PDF document for annotation](images/DecoratedMorph.png)
 
 This widget, a sort of **decorated panel**, presents content
 surrounded with a line, titled with a label and an optional collection
@@ -436,7 +437,9 @@ time slots and the quick buttons present the ‘add’, ‘edit’ and
 
 **PreviewMorph**
 
-![Preview morph](images/image14.png)
+![Preview morph](images/image14.png) 
+![A preview of an annotated PDF document, featuring three action buttons on the document: to save, to edit and to delete](images/previewMorph.png)
+
 
 This morph presents the preview of a file on disk. The name of the
 file is presented at its button with an optional collection of quick
