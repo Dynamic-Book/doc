@@ -284,7 +284,7 @@ Live demonstration https://mamot.fr/@drgeo/113340317300995188
 
 The document GUI, beside the basic tools as pencil, highlighter, eraser, also provides more specialized tools as geometric tools, basic text editor, chronographs, basic calculator. Those tools are inserted in a document and can be annotated too.
 
-Read more on [Tools]
+Read more on [[Tools]]
 
 ## Dynamic Knowledge Models
 
@@ -297,7 +297,7 @@ In this example, the model itself is an interactive geometry engine from which t
 The model dimension in a given DKM is what makes it versatile, with one you can design a lot of different interactive contents. It relies on the facilities provided by Oriented Object Programming, as explained by [Adele Goldberg](https://youtu.be/IGNiH85PLVg?si=HpbUQNGj1SU6rfwj&t=860).
 Technically, all these views are Morph instances representing a view of the underneath model. The Morphs offer a common way to interact and to integrate in the handwritten document.
 
-Read more on [Dynamic Knowledge Model].
+Read more on [[Dynamic Knowledge Model]].
 
 ## Storage
 
