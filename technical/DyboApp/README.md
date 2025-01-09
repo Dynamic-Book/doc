@@ -280,9 +280,9 @@ Live demonstration https://mamot.fr/@drgeo/113340317300995188
 ![Handwritten text](images/image9.png)
 
 ## Annotator
-An annotator is a kind of Paper morphs decorating another morph. This means written notes can be attached to the annotator. The decorated Morph can be a tools or a dynamic knowledge models as described below. 
+An annotator is a kind of paper morph decorating another morph, therefore written notes can be attached to the annotator. The decorated Morph can be a tool or a dynamic knowledge model. 
 
-The distinction between a tool and a dynamic knowledge model is thin. Nevertheless the two can be distinguished by the features of each one.
+The distinction between a tool and a dynamic knowledge model is thin, nevertheless the two can be distinguished by the features of each one.
 
 **Tools.**
 * it offers affordances to manipulate it
@@ -291,7 +291,7 @@ The distinction between a tool and a dynamic knowledge model is thin. Neverthele
 
 Examples of tools: compass, ruler, protractor, calculator, chronograph, a picture, a soundtrack
 
-Read more on [Tools](tools)
+Read more on [Tools](tools.md)
 
 **Dynamic knowledge model.**
 * it designs knowledge
@@ -302,7 +302,7 @@ Read more on [Tools](tools)
 Example of Dynamic knowledge models: geometry, algebra, cartography,
 historic timeline, physic simulation, music score.
 
-Read more on [Dynamic Knowledge Models](dynamic-knowledge-models).
+Read more on [Dynamic Knowledge Models](dynamic-knowledge-models.md).
 
 ## Storage
 
