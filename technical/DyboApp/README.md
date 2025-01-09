@@ -302,7 +302,7 @@ Read more on [Tools](tools.md)
 Example of Dynamic knowledge models: geometry, algebra, cartography,
 historic timeline, physic simulation, music score.
 
-Read more on [Dynamic Knowledge Models](dynamic-knowledge-models.md).
+Read more on [Dynamic Knowledge Models](dynamic-knowledge-models.md)
 
 ## Storage
 
