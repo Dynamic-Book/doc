@@ -280,9 +280,17 @@ Live demonstration https://mamot.fr/@drgeo/113340317300995188
 ![Handwritten text](images/image9.png)
 
 ## Annotator
-An annotator is a kind of paper morph decorating another morph, therefore written notes can be attached to the annotator. The decorated Morph can be a tool or a dynamic knowledge model. 
+An annotator is a kind of paper morph decorating another morph -- the annotated object, therefore written notes can be attached to the annotator. When hovering or clicking on an annotator with the #pointerTool, a cloud of handles shows up, revealing possible actions depending on the annotated object. Possible handles:
+* resize
+* rotate
+* z-layer +/-
+* edit its Smalltalk script
+* menu for additional actions
 
-The distinction between a tool and a dynamic knowledge model is thin, nevertheless the two can be distinguished by the features of each one.
+![Annotated Protractor](images/annotatedProtractor.png)
+
+
+The annotated object can be a tool or a dynamic knowledge model. The distinction between a tool and a dynamic knowledge model is thin, nevertheless the two can be distinguished by the features of each one.
 
 **Tools.**
 * it offers affordances to manipulate it
