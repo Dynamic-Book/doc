@@ -8,3 +8,22 @@ In this example, the model itself is an interactive geometry engine from which t
 
 The model dimension in a given DKM is what makes it versatile, with one you can design a lot of different interactive contents. It relies on the facilities provided by Oriented Object Programming, as explained by [Adele Goldberg](https://youtu.be/IGNiH85PLVg?si=HpbUQNGj1SU6rfwj&t=860).
 Technically, all these views are Morph instances representing a view of the underneath model. The Morphs offer a common way to interact and to integrate in the handwritten document.
+
+
+## Technical characteristics
+
+A DKM has several characteristics and  requirements:
+
+* It's a set of classes describing a model and at least one kind of PlacedMorph representing the main view of the model the user will operate with.
+
+* Instance of the model are created by code. At minimum one line of code (i.e. `VerbTableMorph newOn: 'fill'`) or a several lines Smalltalk script using the dedicated DSL of the model (e.g. DrGeo Smalltalk script). This is this view instance dragged and dropped in the page of document.
+
+* From the page the model instance was dropped, it is possible to edit the script used to create the instance to redefine it: literally replacing the existing model instance by a new instance from the edited script.
+
+* The edited instance by script can be used as model for later use by dragging and dropping back it in a Flap.
+
+* It has an icon and a textual description
+
+* It can be load/saved from disk, from an archive
+
+It contains a model, icon; one or several scripts, each one represented as a FlapItem in a Flap.

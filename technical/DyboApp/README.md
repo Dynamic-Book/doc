@@ -287,6 +287,8 @@ An annotator is a kind of paper morph decorating another morph -- the annotated 
 * edit its Smalltalk script
 * menu for additional actions
 
+Example of a protractor decorated with written instructions. 
+
 ![Annotated Protractor](images/annotatedProtractor.png)
 
 
