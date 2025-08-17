@@ -1,14 +1,21 @@
-The cash register is a boring computer designed for efficiency. The
-Dybo, both software and hardware, wants to bring this efficiency
-to teachers and students to manage their job of teaching and learning.
+*The cash register is a boring computer designed for efficiency. The
+Dybo, both software and hardware, wants to bring this efficiency to
+teachers and students to manage their job of teaching and learning.*
 
-Doc's Dybo repository about documentation, technical notes, essays,
-presentation.
+Welcome to the Dybo documentation. It is structured in four categories
+as described in the [documentation
+system](https://docs.divio.com/documentation-system). At this early
+stage it is largely *Work-In-Progress*
 
+* **[Tutorials.](/Tutorials)** This is the documentation you want to
+ read when first learning Dybo or to learn a very specific facet of
+ Dybo.
 
-For more insights about the project, [watch this
-presentation](https://youtu.be/DBjJrAZSEHs?si=y1hHnFLp9mI_8yN9) at The
-Smalltalk 2023 Fast event in Buenos Aires. Slides in the conferences folder.
+* **How-to Guides.** These guides are step-by-step procedures to
+resolve specific problems you may encounter with Dybo.
 
-Details about the DyboApp are founds in the technical folder and a [Q&A discusion](https://github.com/Dynamic-Book/doc/wiki/Discussion-on-Dynabook) in the wiki.
+* **References.** Here is provided technical documentation on various
+  facets of Dybo.
 
+* **Explanations.** To have a broader picture of Dybo and why this
+  project, take a look here.
