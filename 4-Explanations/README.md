@@ -11,6 +11,6 @@
 
 ## Essays
 
-* [An ordinary back-to-school season](900-Essays/AnOrdinaryBack-to-schoolSeason.md)
+* [An ordinary back-to-school season](900-Essays/AnOrdinaryBack-to-schoolSeason.md), sarcastic essay.
 
-* [Une rentrée scolaire ordinaire](900-Essays/UneRentreeScolaireOrdinaire.md)
+* [Une rentrée scolaire ordinaire](900-Essays/UneRentreeScolaireOrdinaire.md), essai sarcastique.
