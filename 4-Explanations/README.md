@@ -11,7 +11,6 @@
 
 ## Essays
 
-* [An ordinary back-to-school season](900-Essays/An ordinary back-to-school season.md)
+* [An ordinary back-to-school season](900-Essays/AnOrdinaryBack-to-schoolSeason.md)
 
-* [Une rentrée scolaire ordinaire](900-Essays/Une rentrée scolaire
-  ordinaire.md)
+* [Une rentrée scolaire ordinaire](900-Essays/UneRentreeScolaireOrdinaire.md)
