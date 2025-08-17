@@ -221,7 +221,7 @@ but I would need more explanations to understand your point. You seem to defend 
 
 **---HF**: These are technical aspects on how those resources (text scripts of dynamic knowledge model) will be produced. [I explained earlier](#one-laptop-per-child-olpc) that most teachers will rely on existing collections of scripts to insert dynamic content views in their documents. Nevertheless, the few willing to go further in designing dynamic content will be able to do it directly from the Dynabook, with a dedicated editor. The picture below shows at the left the text script edited with a DSL on Euclidean geometry, the view at the right is the resulting dynamic content illustrating a property on geometry. Most teacher will only deal with content as presented in the right view.
 
-[[/doc/4-Explanations/400-Discussion/images/Script-DynamicKnowledge.png|Editor of script on geometric Dynamic Knowledge Model]]
+![Editor of script on geometric Dynamic Knowledge Model](./images/Script-DynamicKnowledge.png)
 
 Regarding the choice of Smalltalk to both develop and script Dynamic knowledge model, this programming language and environment was designed with kids in mind. It offers both an extremely coherent language and a live environment to experiment ideas and code. Cuis-Smalltalk is a modern incarnation focusing on simplicity and elegance.
 
