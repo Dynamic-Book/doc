@@ -1,16 +1,21 @@
 # Explanations
 
-* [Dynabook Revisited](100-Dynabook-Revisited)
+### Concepts
+* [Dynabook Revisited.](100-Dynabook-Revisited) Buenos Aires, November
+  2023
 
-* [Discussion on the Dynabook](400-Discussion)
+* [Discussion on the Dynabook.](400-Discussion) Questions & Answers.
 
 * [The dynamic knowledge models](200-Dynamic-Knowledge-Models) or
 	mediated knowledge.
 
-* [Tools](300-Tools) the teacher or the student use in a document.
+* [Tools](300-Tools) the teacher or the student uses in a document.
 
-## Essays
+### Essays
+* [An ordinary back-to-school
+  season](900-Essays/AnOrdinaryBack-to-schoolSeason.md), sarcastic
+  essay.
 
-* [An ordinary back-to-school season](900-Essays/AnOrdinaryBack-to-schoolSeason.md), sarcastic essay.
-
-* [Une rentrée scolaire ordinaire](900-Essays/UneRentreeScolaireOrdinaire.md), essai sarcastique.
+* [Une rentrée scolaire
+  ordinaire](900-Essays/UneRentreeScolaireOrdinaire.md), essai
+  sarcastique.
