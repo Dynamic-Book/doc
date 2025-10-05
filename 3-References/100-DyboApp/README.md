@@ -301,7 +301,7 @@ The annotated object can be a tool or a dynamic knowledge model. The distinction
 
 Examples of tools: compass, ruler, protractor, calculator, chronograph, a picture, a soundtrack
 
-Read more on [Tools](tools.md)
+Read more on [Tools](https://github.com/Dynamic-Book/doc/tree/main/4-Explanations/300-Tools)
 
 **Dynamic knowledge model.**
 * it designs knowledge
@@ -312,7 +312,7 @@ Read more on [Tools](tools.md)
 Example of Dynamic knowledge models: geometry, algebra, cartography,
 historic timeline, physic simulation, music score.
 
-Read more on [Dynamic Knowledge Models](dynamic-knowledge-models.md)
+Read more on [Dynamic Knowledge Models](https://github.com/Dynamic-Book/doc/tree/main/4-Explanations/200-Dynamic-Knowledge-Models)
 
 ## Storage
 
