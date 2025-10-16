@@ -2,7 +2,7 @@
 
 The document GUI, beside the basic tools as pencil, highlighter, eraser, also provides specialized tools for geometric constructions.
 
-![Geometric tools](./images/geometricTools.png)
+![Geometric tools](./images/geometricTools.png =x400)
 
 ## Straight line tools
 
