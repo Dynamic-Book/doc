@@ -14,7 +14,7 @@ In this example, the model itself is an interactive geometry engine from which t
 
 The user edits the model in the script editor at the left and gets the resulting dynamic media at the right, ready to be inserted in the document.
 
-![The script model and the resulting dynamic view](https://static.mamot.fr/media_attachments/files/112/570/486/116/968/458/original/d0bf0c17e4be5a98.png)
+<img src="https://static.mamot.fr/media_attachments/files/112/570/486/116/968/458/original/d0bf0c17e4be5a98.png" alt="The script model and the resulting dynamic view" width=400 />
 
 ## Text editor
 A text editor with style capabilities can be instantiated from a small
@@ -28,7 +28,7 @@ Timeline is another neat example of DKM. We also illustrate here how
 AI empowers the user, to both achieve what is wanted and also to
 foster computer literacy, particularly in programming.
 
-<img src="./images/timelineEdit.png" />
+<img src="./images/timelineEdit.png" width=400 />
 
 This timeline is computed from a dedicated and simple DSL. From the document, the dynamic timeline can be reedited at any time.
 
