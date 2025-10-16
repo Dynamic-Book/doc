@@ -36,7 +36,7 @@ The DSL is so simple that an AI can learn to use it from an
 example. Then when asking to create a timeline as "Give me another timeline for the the 10 most important battles of Alexander the great". It suggests:
 
 
-``smalltalk
+```smalltalk
 Timeline title: 'Major Battles of Alexander the Great' ::
 	addEvent: 'Battle of the Granicus River. First major victory over Persian satraps in Asia Minor.' on: '-334.5.1'; 
 	addEvent: 'Siege of Halicarnassus. The prolonged siege that forced the Persians to switch to naval warfare.' on: '-334.7.1'; 
@@ -52,13 +52,13 @@ Timeline title: 'Major Battles of Alexander the Great' ::
 	width: 4;
 	color: Color gold;
 	view
-``
+```
 
 In only got wrong ``Color gold``, gold is not a color in Cuis-Smalltalk.
 
 The resulting timeline:
 
-![Ten greatest battle of Alexander the Great](https://static.mamot.fr/media_attachments/files/115/356/691/735/237/920/original/189661d13dc24c40.png}
+![Ten greatest battle of Alexander the Great](https://static.mamot.fr/media_attachments/files/115/356/691/735/237/920/original/189661d13dc24c40.png)
 
 
 # Technical characteristics
