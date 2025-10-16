@@ -19,7 +19,7 @@ angle, the user benefits of a one degree accuracy.
 <img src="https://static.mamot.fr/media_attachments/files/115/215/813/359/512/004/small/3fa99fc014d8d094.png" alt="Construct a one degree angle" width=300 />
 
 
-The tools in action: (https://mamot.fr/@drgeo/115198697315317043)
+The tools in action: https://mamot.fr/@drgeo/115198697315317043
 
 ## Compass
 
@@ -29,4 +29,4 @@ tool to learn how to use real one.
 
 <img src="https://static.mamot.fr/media_attachments/files/115/244/187/837/701/390/original/d89ff6d6536f84cf.png" alt="compass" width=300 />
 
-The compass in action: ![demonstration in video](https://mamot.fr/@drgeo/115255434292314969)
+The compass in action: [demonstration in video](https://mamot.fr/@drgeo/115255434292314969)
