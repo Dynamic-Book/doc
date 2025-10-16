@@ -23,9 +23,9 @@ The tools in action: [demonstration in video](https://mamot.fr/@drgeo/1151986973
 
 ## Compass
 
-With the compass tool, the user find the handles to mimic a real
+With the compass tool, the user finds the handles to mimic a real
 compass.  It is both a tool to construct arc and circle but also a
-tool to learn how to use real one.
+tool to learn how to use a real one.
 
 <img src="https://static.mamot.fr/media_attachments/files/115/244/187/837/701/390/original/d89ff6d6536f84cf.png" alt="compass" width=300 />
 
