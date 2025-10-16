@@ -17,8 +17,8 @@ The user edits the model in the script editor at the left and gets the resulting
 <img src="https://static.mamot.fr/media_attachments/files/112/570/486/116/968/458/original/d0bf0c17e4be5a98.png" alt="The script model and the resulting dynamic view" width=400 />
 
 ## Text editor
-A text editor with style capabilities can be instantiated from a small
-script. 
+A text editor with style capabilities instantiated from a small
+script.
 
 Watch the concept demonstrated:
 https://mamot.fr/@drgeo/114154912013226195
@@ -34,7 +34,6 @@ This timeline is computed from a dedicated and simple DSL. From the document, th
 
 The DSL is so simple that an AI can learn to use it from an
 example. Then when asking to create a timeline as "Give me another timeline for the the 10 most important battles of Alexander the great". It suggests:
-
 
 ```smalltalk
 Timeline title: 'Major Battles of Alexander the Great' ::
@@ -59,6 +58,10 @@ In only got wrong ``Color gold``, gold is not a color in Cuis-Smalltalk.
 The resulting timeline:
 
 ![Ten greatest battle of Alexander the Great](https://static.mamot.fr/media_attachments/files/115/356/691/735/237/920/original/189661d13dc24c40.png)
+
+Therefore, the user can learn simple programming assisted by an AI. Of
+course the suggested historical data should be double checked and the
+script user edited accordingly.
 
 
 # Technical characteristics
