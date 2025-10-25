@@ -1,8 +1,3 @@
-Je vais m'assurer que la section sur le matériel soit complète et précise dans la synthèse. J'ai regroupé les spécifications et les justifications des choix techniques.
-
-Voici la synthèse complète et mise à jour, formatée en Markdown, avec la section Hardware bien détaillée :
-
-```markdown
 # Synthèse Détaillée : Échange Dybo (Hilaire Fernandes et Georges)
 
 Ce document résume les idées et les réflexions majeures issues de la discussion par mail entre Hilaire Fernandes (porteur du projet Dybo) et Georges (enseignant retraité).
@@ -63,4 +58,5 @@ Ce document résume les idées et les réflexions majeures issues de la discussi
 | **Stratégie d'Adoption** | L'approche doit être **humble** et permettre à Dybo de **cohabiter avec les usages traditionnels**. L'utilisateur doit en tirer un **bénéfice individuel, visible et mesurable**. |
 | **Scénarios de Déploiement** | **Approche "Par le Haut"** (établissement entier nécessitant une "volonté politique crédible") ou **Approche "Par le Bas"** (petite équipe pédagogique dans un établissement ordinaire, jugée plus fréquente). |
 | **Obstacles Institutionnels** | Le système français est jugé **auto-blocant** en raison du "mille-feuille pédagogique et administratif", de la friction entre prescripteurs et de l'interdiction faite à l'éditeur national d'éditer des manuels. |
-```
+
+
