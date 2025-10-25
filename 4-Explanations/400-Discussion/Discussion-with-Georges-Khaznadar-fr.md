@@ -2,12 +2,6 @@
 
 ***
 
-# Synthèse Détaillée : Échange Dybo (Hilaire Fernandes et Georges)
-
-Ce document résume les idées et les réflexions majeures issues de la discussion par mail entre Hilaire Fernandes (porteur du projet Dybo) et Georges (enseignant retraité).
-
-***
-
 ## 1. Vision et Philosophie du Projet Dybo
 
 | Idée Clé | Détails et Objectifs |
