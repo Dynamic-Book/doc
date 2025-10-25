@@ -1,4 +1,4 @@
-*A discussion about the Dybo project with Georges Khaznadar, an experienced French teacher in the field of sciences and computer deveployments in schools. April 2023*
+*A discussion about the Dybo project with Georges Khaznadar, an experienced French teacher in the field of sciences and computer deployments in schools. April 2023*
 
 ***
 
@@ -55,5 +55,4 @@
 | **Dybo Solution (Autonomy)** | In-class use **must not require remote authentication**. Document sharing occurs **locally in class peer-to-peer** via **Bluetooth and/or Wi-Fi** from the teacher's Dynabook. A **local Wi-Fi network is the right solution** in most cases. |
 | **Adoption Strategy** | The approach must be **humble** and allow Dybo to **coexist with traditional uses**. The user must derive a **visible and measurable individual benefit**. |
 | **Deployment Scenarios** | **"Top-Down" Approach** (entire establishment requiring "credible political will") or **"Bottom-Up" Approach** (small pedagogical team in an ordinary establishment, judged more frequent). |
-| **Institutional Obstacles** | The French system is considered **self-blocking** due to the "administrative and pedagogical layers" (*mille-feuille*), friction between hardware prescribers and pedagogical prescribers, and the prohibition for the national publisher (CNDP) to publish textbooks. |
 ```

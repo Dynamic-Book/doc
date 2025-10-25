@@ -55,6 +55,6 @@
 | **Solution Dybo (Autonomie)** | L'utilisation en classe **ne doit pas nécessiter d'authentification distante**. Le partage de documents se fait **localement en classe de pair à pair** (Peer-to-Peer) via **Bluetooth et/ou Wi-Fi** depuis le Dynabook de l'enseignant. Un **réseau local Wi-Fi est la bonne solution** dans la majorité des cas. |
 | **Stratégie d'Adoption** | L'approche doit être **humble** et permettre à Dybo de **cohabiter avec les usages traditionnels**. L'utilisateur doit en tirer un **bénéfice individuel, visible et mesurable**. |
 | **Scénarios de Déploiement** | **Approche "Par le Haut"** (établissement entier nécessitant une "volonté politique crédible") ou **Approche "Par le Bas"** (petite équipe pédagogique dans un établissement ordinaire, jugée plus fréquente). |
-| **Obstacles Institutionnels** | Le système français est jugé **auto-blocant** en raison du "mille-feuille pédagogique et administratif", de la friction entre prescripteurs et de l'interdiction faite à l'éditeur national d'éditer des manuels. |
+
 
 
