@@ -148,6 +148,18 @@ student. Person instances can be sorted in a collection.
 
 Described in the school instances
 
+It has an additional attribute
+
+* courseSymbols: a collection of symbols to depict the type of DKM of
+  interest for a teacher. A DKM has a dkmCourse property (pragma or
+  attribute), a DKM is automatically load at application launch time
+  when its dkmCourse is included in the teacher's courseSymbols
+  collection.
+  
+Possible value of courseSymbols element: #music #mathematics #english
+#physic #biology etc
+
+
 **Student** (class `DyStudent`)
 
 ## Calendar
