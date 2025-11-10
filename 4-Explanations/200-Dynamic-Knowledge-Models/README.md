@@ -53,7 +53,7 @@ Timeline title: 'Major Battles of Alexander the Great' ::
 	view
 ```
 
-In only got wrong ``Color gold``, gold is not a color in Cuis-Smalltalk.
+It only got wrong ``Color gold``, gold is not a color in Cuis-Smalltalk.
 
 The resulting timeline:
 
