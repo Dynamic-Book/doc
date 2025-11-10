@@ -33,7 +33,7 @@ foster computer literacy, particularly in programming.
 This timeline is computed from a dedicated and simple DSL. From the document, the dynamic timeline can be reedited at any time.
 
 The DSL is so simple that an AI can learn to use it from an
-example. Then when asking to create a timeline as "Give me another timeline for the the 10 most important battles of Alexander the great". It suggests:
+example. Then when asking to create a timeline as "Give me another timeline for the 10 most important battles of Alexander the great". It suggests:
 
 ```smalltalk
 Timeline title: 'Major Battles of Alexander the Great' ::
