@@ -185,8 +185,8 @@ It is modeled by the user times slots (See DyTimeSlot).
 
 **Task** (class `DyTask`)
 
-Describe a task (homework) for a given course, the related course is
-determined by the time slot and the date.
+Describe a task (homework) for a given course, the related course is 
+automatically determined by the selected time slot and date.
 
 * date
 * timeSlot
@@ -328,12 +328,13 @@ The storage on disk is organized in directories, sub-directories and
 objects. For fast prototyping, the objects are saved as
 ReferenceStream and/or SmartReferenceStream. A more durable file
 format may be decided later once the overall model stabilize
-(Sqlite, XML,etc).
+(Sqlite, XML, JSON, etc).
 
 # GUI Layout
 
-Describe GUI layouts and flows between the different parts of the
-Dybo app. Sketches and implementation views in the next sections.
+Describe the GUI layouts and flows between the different parts of the
+DyboApp. In the next sections, Sketches and implementation views illustrate 
+the layout.
 
 ## Home Page
 
@@ -382,8 +383,10 @@ label.
 Regarding the organization in the OS, a class group (1035 in the
 sketch) is a folder in the file system. A course is also a folder in
 its parent class group folder.  Then, a topic is a folder in its
-parent course folder. In a topic folder, each file represent a
-document.
+parent course folder. In a topic folder, each document is saved in 
+a timestamped Document folder; in that folder the files doc.obj (a serialization 
+of the document tree) and related ressources represent all the data 
+of the document.
 
 Therefore, the binder of a class group/course association is
 represented as a collection of folders (class group, course, topics)
