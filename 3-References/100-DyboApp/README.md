@@ -10,7 +10,7 @@ a restricted context. The
 Dybo, both software and hardware, wants to bring this kind of efficiency
 to teachers and students to manage their job of teaching and learning.
 
-![A closed Dybo](images/image2-sm.png)
+<img src="images/image2-sm.png" alt="A closed Dybo" width=400/>
 
 The DyboApp is the main user application of the Dybo
 device. It is through this app that teachers and students interact the
@@ -46,7 +46,7 @@ Business objects describe the objects involved in the user activities and their
 relations. They are necessary to adapt to the activities the user
 (learner or educator) needs to conduct.
 
-![Business objects diagram](images/image16.png)
+<img src="images/image16.png" alt="Business objects diagram" width=400/>
 
 ## Administrative Objects
 
@@ -231,7 +231,7 @@ share her understanding with others? How can he/she...
 The learning content of the Dybo is organized in interactive document
 objects.
 
-![A document with live objects annotated](images/image15.png)
+<img src="images/image15.png" alt="A document with live objects annotated" width=400/>
 
 **Document** (classes `Document`, `DocumentModel`, `DocumentView`)
 
@@ -284,9 +284,10 @@ Below, samples of preliminary works on the paper morph handwriting:
 
 Live demonstration https://mamot.fr/@drgeo/113340317300995188
 
-![Handwritten text](images/image8.png) ![Handwritten text](images/image7.png)
+<img src="images/image8.png" alt="Handwritten text"/>
+<img src="images/image7.png" alt="Handwritten text"/>
 
-![Handwritten text](images/image9.png)
+<img src="images/image9.png" alt="Handwritten text"/>
 
 ## Annotator
 An annotator is a kind of paper morph decorating another morph -- the annotated object, therefore written notes can be attached to the annotator. When hovering or clicking on an annotator with the #pointerTool, a cloud of handles shows up, revealing possible actions depending on the annotated object. Possible handles:
