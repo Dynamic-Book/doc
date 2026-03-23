@@ -231,7 +231,7 @@ share her understanding with others? How can he/she...
 The learning content of the Dybo is organized in interactive document
 objects.
 
-<img src="images/image15.png" alt="A document with live objects annotated" width=400/>
+<img src="images/image15.png" alt="A document with live objects annotated" width=300/>
 
 **Document** (classes `Document`, `DocumentModel`, `DocumentView`)
 
@@ -425,7 +425,7 @@ its circular sub-toolbars.
 
 ## Preferences Editor
 <img src="images/image5.png" alt="Settings editor sketch" width=400/>
-<img src="images/Settings editor view" alt="settingsView.png" width=400/>
+<img src="images/settingsView.png" alt="Settings editor view" width=400/>
 
 In the preference editor, the user browses in the administrative data
 necessary to the application, to meaningfully present the information
@@ -444,8 +444,7 @@ decorated panel, selecting ‘1035’, then the ‘edit’ quick button (the
 second one) leads to the ‘1035’ object. Then the navigation can
 continue to the ‘Mathematic’ course and so on.
 
-![Flow of the business objects editor](images/image17.png)
-<img src="images/" alt="" width=400/>
+<img src="images/image17.png" alt="Flow of the business objects editor" width=400/>
 
 # UI Development
 
@@ -455,8 +454,8 @@ A set of custom widgets developped or to develop.
 
 **DecoratedPluggableMorph**
 
-![Decorated panel](images/image10.png)
-![Dybo decorated panel featuring several Dybo documents and two action buttons to edit new empty document and to import PDF document for annotation](images/DecoratedMorph.png)
+<img src="images/image10.png" alt="Decorated panel" width=400/>
+<img src="images/DecoratedMorph.png" alt="[Dybo decorated panel featuring several Dybo documents and two action buttons to edit new empty document and to import PDF document for annotation" width=400/>
 
 This widget, a sort of **decorated panel**, presents content
 surrounded with a line, titled with a label and an optional collection
@@ -483,10 +482,8 @@ time slots and the quick buttons present the ‘add’, ‘edit’ and
 ‘delete’ operations on the collections and its items.
 
 **PreviewMorph**
-
-![Preview morph](images/image14.png) 
-![A preview of an annotated PDF document, featuring three action buttons on the document: to save, to edit and to delete](images/previewMorph.png)
-
+<img src="images/image14.png" alt="Preview morph" width=400/>
+<img src="images/previewMorph.png" alt="[A preview of an annotated PDF document, featuring three action buttons on the document: to save, to edit and to delet" width=400/>
 
 This morph presents the preview of a file on disk. The name of the
 file is presented at its button with an optional collection of quick
@@ -505,19 +502,15 @@ A widget with a main view in its bottom and top navigation bar. It is
 used to browse the administrative objects, both for viewing and to
 edition. Below, at the left a view of a school object, at the right
 its edition.
-
-![Breadcrumb of the business objects](images/image1.png)
-
-![Breadcrumb of the business objects](images/image13.png)
+<img src="images/image1.png" alt="Breadcrumb of the business objects" width=400/>
+<img src="images/image13.png" alt="v" width=400/>
 
 # Hardware
 
 ## Concept
 
-![Dybo concept, laptop mode](images/image18.png)
-
-![Dybo concept, notebook mode](images/image6.png)
-
+<img src="images/image18.png" alt="Dybo concept, laptop mode" width=400/>
+<img src="images/image6.png" alt="[Dybo concept, notebook mode" width=400/>
 
 # Annexes
 
