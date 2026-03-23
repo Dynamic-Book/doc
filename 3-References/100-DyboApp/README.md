@@ -12,7 +12,7 @@ to teachers and students to manage their job of teaching and learning.
 
 ![A closed Dybo](images/image2-sm.png)
 
-The Dybo App is the main user application of the Dybo
+The DyboApp is the main user application of the Dybo
 device. It is through this app that teachers and students interact the
 most. Its features are interconnected to maximize user comfort and to
 save time. It anticipates the needs of the teacher or student
@@ -21,14 +21,13 @@ location and time of use, at home, school, in which class, and with
 which collaborators.
 
 The educational documents are based on hand annotated pdf documents
-(with a stylus) and interactive presentation objects, or Morphs, which are 
-plugged in when needed. These teaching 
-documents are organized in topics and binders. The plugged Morphs are
-retrieved from existing libraries or user written in the Smalltalk
-Programming Language.  The administrative contents are organized in objects
-described in the Objects chapter, Administrative section. The
-educational topic objects are described in the Educational and Document
-sections.
+(with a stylus) and interactive presentation objects (DKM), which are 
+plugged in when needed. These educational documents are organized in 
+topics and binders. The plugged DKMs are
+retrieved from existing libraries and/or user written in a script 
+programming language.  The administrative contents are organized in objects
+described in the *Business Objects* chapter. The
+educational topic objects are described in the *Knowledge Objects* chapter.
 
 ## Collaboration
 
@@ -39,17 +38,17 @@ institutions, not limited to, in business, design, pedagogy, hardware,
 management, software.
 
 To do this requires a common understanding of the structure and design
-of the DynaBook software ecosystem.
+of the Dybo software ecosystem.
 
-# Educator Objects
+# Business Objects
 
-Educator Objects describe the objects involved in the user activities and their
+Business objects describe the objects involved in the user activities and their
 relations. They are necessary to adapt to the activities the user
 (learner or educator) needs to conduct.
 
 ![Business objects diagram](images/image16.png)
 
-## Administrator Objects
+## Administrative Objects
 
 These are the objects describing the educational management, not the
 educational content; the administrative facets of the teacher and
@@ -62,7 +61,7 @@ student roles.
 
 In the Dybo host disk, the root of the unique App instance is given by
 its message `#directory`. It returns the same directory entry as
-`DySystem userDataPath`. This object and its attributes are saved in
+`DyboSystem userDataPath`. This object and its attributes are saved in
 the file *data.ob*.
 
 **School** (class `DySchool`)
@@ -196,10 +195,10 @@ determined by the time slot and the date.
 All tasks share the same directory returned by the message
 `#directory`, located in the App directory.
 
-## Educational
+## Organisational Objects
 
 These objects describe where and how the educational documents are
-organized.
+organised.
 
 **Binder**
 
