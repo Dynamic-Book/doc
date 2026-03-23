@@ -28,8 +28,8 @@ directories structured as:
 For example with ``CO#Foron/1022/Mathématiques/Calcul#littéral/2025-08-16-19h30m45s``,
 * CO#FORON is the school
 * 1022 is the class group
-* Mathématiques is the lesson
-* Calcul#littéral is the topic
+* Mathématiques is the course
+* Calcul#littéral is a topic in the Mathématiques course
 * 2025-08-16-19h30m45s the directory for the document created at this
   date and time.
 
