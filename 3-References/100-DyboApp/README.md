@@ -394,7 +394,7 @@ Documents-xxx-xxx-xx) and files (documents).
 
 For example, a valid path for a pedagogical document is:
 
-`Flussschule/1035/Mathematik/Algebra/Document-2026-03-23-11h51m15s/`
+`Flussschule/1035/Mathematik/Algebra/Dokument-2026-03-23-11h51m15s/`
 
 The binder tries to guess the appropriate class group, courses and
  topic to present to the user. The guess is
