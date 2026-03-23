@@ -299,7 +299,7 @@ An annotator is a kind of paper morph decorating another morph -- the annotated 
 
 Example of a protractor decorated with written instructions. 
 
-![Annotated Protractor](images/annotatedProtractor.png)
+<img src="images/annotatedProtractor.png" alt="Annotated Protractor" width=400/>
 
 The annotated object can be a tool or a dynamic knowledge model. The distinction between a tool and a dynamic knowledge model is thin, nevertheless the two can be distinguished by the features of each one.
 
@@ -339,7 +339,7 @@ the layout.
 
 ## Home Page
 
-![home page](images/image11.png)
+<img src="images/image11.png" alt="home page" width=400/>
 
 The **home page** always shows a list of recent activities. There are
 the edited documents and the tasks. These items are sorted according
@@ -352,9 +352,8 @@ and its buttons Start, Agenda, Binder and Preferences are always
 visible all along the workflow in the Dybo app.
 
 ## Task Page
-
-![Task sketch](images/image4.png)
-![Task view](images/taskView.png)
+<img src="images/image4.png" alt="Task sketch" width=400/>
+<img src="images/taskView.png" alt="Task view" width=400/>
 
 In the task page, the user quickly adds a task for the next
 course. The Dybo tries to guess the class, the day and the period
@@ -368,8 +367,8 @@ previous task page.
 
 ## Smart Binder
 
-![Binder sketch](images/image12.png)
-![Binder view](images/binderView.png)
+<img src="images/image12.png" alt="Binder sketch" width=400/>
+<img src="images/binderView.png" alt="Binder view" width=400/>
 
 From the binder view, the user finds the class groups, then in each
 one its related courses.  For each association of class group/course,
@@ -410,9 +409,8 @@ create a new document or import a pdf document. In the hand sketch, the
 courses drop down menu is not represented.
 
 ## Document Editor
-
-![Document sketch](images/image3.png)
-![Document view](images/documentView.png)
+<img src="images/image3.png" alt="Document sketch" width=400/>
+<img src="images/documentView.png" alt="Document view" width=400/>
 
 With the document editor, the user annotates imported PDF
 documents. On the top of its view, a horizontal toolbar gives access
@@ -426,9 +424,8 @@ Additional tools are invoked from the contextual circular toolbar and
 its circular sub-toolbars.
 
 ## Preferences Editor
-
-![Settings editor sketch](images/image5.png)
-![Settings editor view](images/settingsView.png)
+<img src="images/image5.png" alt="Settings editor sketch" width=400/>
+<img src="images/Settings editor view" alt="settingsView.png" width=400/>
 
 In the preference editor, the user browses in the administrative data
 necessary to the application, to meaningfully present the information
@@ -448,6 +445,7 @@ second one) leads to the ‘1035’ object. Then the navigation can
 continue to the ‘Mathematic’ course and so on.
 
 ![Flow of the business objects editor](images/image17.png)
+<img src="images/" alt="" width=400/>
 
 # UI Development
 
