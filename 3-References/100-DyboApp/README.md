@@ -365,7 +365,7 @@ sketches.  On the bottom a list of the forthcoming tasks the user can
 open for further details. A click on the Task button returns to the
 previous task page.
 
-## Binder
+## Smart Binder
 
 ![Binder sketch](images/image12.png)
 ![Binder view](images/binderView.png)
@@ -389,11 +389,15 @@ of the document tree) and related ressources represent all the data
 of the document.
 
 Therefore, the binder of a class group/course association is
-represented as a collection of folders (class group, course, topics)
-and files (documents).
+represented as a collection of folders (class group, course, topics, 
+Documents-xxx-xxx-xx) and files (documents).
 
-The Dybo tries to guess the appropriate class group, courses and
- topic to present to the user when the binder is opened. The guess is
+For example, a valid path for a pedagogical document is:
+
+`Flussschule/1035/Mathematik/Algebra/Document-2026-03-23-11h51m15s/`
+
+The binder tries to guess the appropriate class group, courses and
+ topic to present to the user. The guess is
  based on the current time of the day, the user schedule and the last
  edited documents. If the guess is not appropriate, the user can
  adjust the class group, course and topic from the dropdown lists.
@@ -436,7 +440,7 @@ objects and decorated panels for collection of instances. The
 educational documents associated with these objects are discarded by
 the Preference editor.
 
-Selecting the ‘Paul’ user presents its information, there is a ‘Save’
+Selecting the ‘Paul’ user presents his information, there is a ‘Save’
 button to save editing of the three text fields. In the ‘Classes’
 decorated panel, selecting ‘1035’, then the ‘edit’ quick button (the
 second one) leads to the ‘1035’ object. Then the navigation can
@@ -448,7 +452,7 @@ continue to the ‘Mathematic’ course and so on.
 
 ## Widgets
 
-A set of widgets to develop.
+A set of custom widgets developped or to develop.
 
 **DecoratedPluggableMorph**
 
