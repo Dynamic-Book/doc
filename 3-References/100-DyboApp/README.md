@@ -25,19 +25,19 @@ The educational documents are based on hand annotated pdf documents
 plugged in when needed. These educational documents are organized in 
 topics and binders. The plugged DKMs are
 retrieved from existing libraries and/or user written in a script 
-programming language.  The administrative contents are organized in objects
-described in the *Business Objects* chapter. The
-educational topic objects are described in the *Knowledge Objects* chapter.
+programming language.  The administrative contents are described in 
+the *Business Objects* chapter. The educational contents 
+are described in the *Knowledge Objects* chapter.
 
 ## Collaboration
 
 The domain of development is vast, both in software and hardware
-designs. To develop the project, we want to encourage world wide
-collaborations with private and public institutions, educational
+designs. To develop the project, we want to encourage european and world wide
+collaborations with private initiatives, public institutions, educational
 institutions, not limited to, in business, design, pedagogy, hardware,
 management, software.
 
-To do this requires a common understanding of the structure and design
+To do so needs a common understanding of the structure and design
 of the Dybo software ecosystem.
 
 # Business Objects
@@ -62,7 +62,7 @@ student roles.
 In the Dybo host disk, the root of the unique App instance is given by
 its message `#directory`. It returns the same directory entry as
 `DyboSystem userDataPath`. This object and its attributes are saved in
-the file *data.ob*.
+the file *data.ob*, a serialization of a tree of saved objects.
 
 **School** (class `DySchool`)
 
@@ -82,7 +82,8 @@ student).
 
 Each school instance has its own directory in the Dybo host disk, its
 location is returned by the message `aSchool directory`. All these
-school's directories are located in the App directory.
+school's directories are located in the App directory by default, or saved
+at another location defined by the user.
 
 **Time slot** (class `DyTimeSlot`)
 
@@ -119,14 +120,13 @@ located in its parent school directory.
 
 **Course** (class `DyCourse`)
 
-It is useful for the teacher and student to describe all of their
-courses.
+It describes a course of a teacher or a student.
 
-* subject (the taught subject name)
-* color (distinctive attribute)
-* teacher (person, relevant for student user only)
-* courseHours
-* topics (a collection of topic objects taught in this course)
+* subject, the taught subject name (e.g. Mathematics)
+* color, a distinctive attribute
+* teacher,  a person, relevant for student user only
+* courseHours, collection of DyCourseHour
+* topics, a collection of topic objects taught in this course (e.g. Algebra, Geometry, Arithmetic, Analysis)
 
 Each course instance has its own directory in the Dybo disk, returned
 by the `#directory` message. Each course directory is located in its
@@ -147,7 +147,7 @@ student. Person instances can be sorted in a collection.
 
 Described in the school instances
 
-It has an additional attribute
+A kind of Personn, with an additional attribute
 
 * courseSymbols: a collection of symbols to depict the type of DKM of
   interest for a teacher. A DKM has a dkmCourse property (pragma or
@@ -175,8 +175,8 @@ are the next periods of this course?"
 
 **Agenda** (class `DyAgenda`)
 
-The place to record teacher assignments (tasks. It follows the user
-times slots as:
+The place to record teacher assignments (tasks) during a given school year. 
+It is modeled by the user times slots (See DyTimeSlot).
 
 * start (back-to-school day)
 * end  (end-of-school day)
