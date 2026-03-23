@@ -223,39 +223,36 @@ documents data, each one in its own folder.
 
 How can the educator represent, describe and modelise knowledge? How
 can he/she share the represented knowledge with the learner? How can he/she
-assess the learner's knowledge?
-
-How can the learner experiment and capture knowledge? How can she
+assess the learner's knowledge? How can the learner experiment and capture knowledge? How can she
 share her understanding with others? How can he/she...
 
 ## Documents
 
-The content of the Dybo is organized in interactive document
+The learning content of the Dybo is organized in interactive document
 objects.
 
 ![A document with live objects annotated](images/image15.png)
 
 **Document** (classes `Document`, `DocumentModel`, `DocumentView`)
 
-It is the root of a tree of Morphs. In a document, diversified Morphs
-can be inserted including Dynamic Media described with Smalltalk
-code. The document is organized in disjoint pages.
+It is the root of a tree of visual contents. In a document, diversified contents
+are inserted including DKMs described with script. 
+The document is organized in disjoint pages.
 
 A document instance informs about its folder with the message
-`#dirName`. Its complete directory entry depends on the context of its
+`#dirName`. Its full path on disk depends on the context of its
 creation; if created as a document of a task, it is appended to the
 directory task, if created as a document in a topic, it is appended to
 the topic directory.
 
-
 **Page** (class `PageMorph`, `PageModel` hierarchy)
 
-This Morph is a unit of a Document, this is the main place to
+This view is a unit of a Document, this is the main place to
 hand write. It is constituted of two layers :
 
-* A page model morph (`PageModel`) and a paper (`PaperMorph`) with
-extents identical to the page's extent it is attached too. Examples of
-page model are plain color, calculated (grid, writing lines, music
+* A page background model (`PageBackground`) and a paper (`PaperMorph`) with
+extents identical to the page's extent it is attached to. Examples of
+page backround are plain color, calculated (grid, writing lines, music
 scope, etc), PDF model.
 
 * The paper morph contains the user handwriting.
@@ -263,10 +260,13 @@ scope, etc), PDF model.
 The user operates on a page with the document toolbar: pen, marker,
 eraser, color and dedicated tools for handwriting operations.
 
-Additionally, in a page, the user can insert a kind of PlacedMorph (a
-Morph with a location), decorated with its own paper Morph, to retain
-contextualized and attached handwritten annotations. The decorator is
-an `AnnotatorMorph`, a special kind of Paper Morph
+Additionally, in a page, the user inserts composite objects (DKMs), 
+kind of PlacedMorph (a Morph with a location), decorated with 
+its own paper Morph, to retain contextualized and attached handwritten annotations. 
+The decorator is an `AnnotatorMorph`, a special kind of Paper Morph
+These composite objects can be moved in the x, y, z axis, rotated, scaled and
+hand annoted.
+
 
 **Paper** (class `PaperMorph`)
 
@@ -276,11 +276,9 @@ paper morph contains all these stroke group morphs. Each group
 contains individual stroke morphs, which are Bézier curves.
 
 A special paper morph -- the `AnnotatorMorph` -- can decorate a target
-Morph (DrGeoView, etc.) to attach user handwriting. Ideally each
-submorph of the target Morph should also receive handwritten
-annotations.
+view (interactive geometrz, simulation, time line, text editor, etc.) to attach user handwriting.
 
-The annotator morphs are inserted in the paper of the page.
+The annotator morphs are inserted in the paper of the page. It is paper in paper.
 
 Below, samples of preliminary works on the paper morph handwriting:
 
@@ -301,7 +299,6 @@ An annotator is a kind of paper morph decorating another morph -- the annotated 
 Example of a protractor decorated with written instructions. 
 
 ![Annotated Protractor](images/annotatedProtractor.png)
-
 
 The annotated object can be a tool or a dynamic knowledge model. The distinction between a tool and a dynamic knowledge model is thin, nevertheless the two can be distinguished by the features of each one.
 
