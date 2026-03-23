@@ -402,18 +402,18 @@ The binder tries to guess the appropriate class group, courses and
  edited documents. If the guess is not appropriate, the user can
  adjust the class group, course and topic from the dropdown lists.
 
-Below a mini view list from the recent documents in the selected class
-group and topic is presented. A click in one of these mini views opens
-the document editor. From the ‘Recent Documents’ panel, the user can
-create a new document and import a pdf document. In the sketch, the
-courses drop down menu is missing.
+In the *My documents/Recent Documents* frame, are presented mini views of the recent 
+documents of the selected class group/course/topic. A click in one of these mini views opens
+the document editor. From the quick buttons, at the right, the user can
+create a new document or import a pdf document. In the hand sketch, the
+courses drop down menu is not represented.
 
 ## Document Editor
 
 ![Document sketch](images/image3.png)
 ![Document view](images/documentView.png)
 
-In the document editor, the user can annotate imported PDF
+With the document editor, the user annotates imported PDF
 documents. On the top of its view, a horizontal toolbar gives access
 to the essential tools : pen, eraser, undo/redo operation and move
 action. At the right and the bottom of the view, there are wheel
