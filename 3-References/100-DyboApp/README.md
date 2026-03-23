@@ -482,8 +482,9 @@ time slots and the quick buttons present the ‘add’, ‘edit’ and
 ‘delete’ operations on the collections and its items.
 
 **PreviewMorph**
-<img src="images/image14.png" alt="Preview morph" width=400/>
-<img src="images/previewMorph.png" alt="[A preview of an annotated PDF document, featuring three action buttons on the document: to save, to edit and to delet" width=400/>
+
+<img src="images/image14.png" alt="Preview morph" width=100/>
+<img src="images/previewMorph.png" alt="[A preview of an annotated PDF document, featuring three action buttons on the document: to save, to edit and to delet" width=100/>
 
 This morph presents the preview of a file on disk. The name of the
 file is presented at its button with an optional collection of quick
@@ -502,8 +503,9 @@ A widget with a main view in its bottom and top navigation bar. It is
 used to browse the administrative objects, both for viewing and to
 edition. Below, at the left a view of a school object, at the right
 its edition.
-<img src="images/image1.png" alt="Breadcrumb of the business objects" width=400/>
-<img src="images/image13.png" alt="v" width=400/>
+
+<img src="images/image1.png" alt="Breadcrumb of the business objects" width=200/>
+<img src="images/image13.png" alt="v" width=200/>
 
 # Hardware
 
