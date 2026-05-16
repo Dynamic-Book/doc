@@ -5,7 +5,7 @@ A Dynamic Knowledge Model (DKM) is a model representing a media of some knowledg
 A more elaborated example of a DKM, illustrating more precisely its model dimension, is a [DrGeo](http://gnu.org/s/dr-geo) geometric sketch. Described with a script, the user will insert it as an interactive view in her document, along handwritten notes. The user could then interact into this view, dragging objects to observe what is happening and discovering behavior to engage in new learning.
 
 The model dimension in a given DKM is what makes it versatile, with one you can design a lot of different interactive contents. It relies on the facilities provided by Oriented Object Programming, as explained by [Adele Goldberg](https://youtu.be/IGNiH85PLVg?si=HpbUQNGj1SU6rfwj&t=860).
-Technically, all these views are Morph instances representing a view of the underneath model. The Morphs offer a common way to interact and to integrate in the handwritten document.
+Technically, all these views are [Cuis](http://cuis.st)'Morph instances representing a view of the underneath model. The Morphs offer a common way to interact and to integrate in the handwritten document.
 
 # Examples
 
@@ -14,14 +14,30 @@ In this example, the model itself is an interactive geometry engine from which t
 
 The user edits the model in the script editor at the left and gets the resulting dynamic media at the right, ready to be inserted in the document.
 
+<img src="./images/drgeo2.png" width=400 />
+
+Once edited, the script is added to the user document:
+
+<img src="./images/drgeo1.png" width=400 />
+
+Script and sketch can be complex:
+
 <img src="https://static.mamot.fr/media_attachments/files/112/570/486/116/968/458/original/d0bf0c17e4be5a98.png" alt="The script model and the resulting dynamic view" width=400 />
 
 ## Text editor
-A text editor with style capabilities instantiated from a small
-script.
+A text editor model with style capabilities instantiated from a small
+script is a valuable DKM.
 
-Watch the concept demonstrated:
-https://mamot.fr/@drgeo/114154912013226195
+A French language teacher can create text exercise:
+
+<img src="./images/text1.png" width=400 />
+
+This exercise is described with the dedicated script on the Text DKM:
+
+<img src="./images/text2.png" width=400 />
+
+AI with appropriate training can help to write these scripts. The
+`brain` icon provides the appropriate prompt of each DKM.
 
 ## Timeline
 Timeline is another neat example of DKM. We also illustrate here how
@@ -66,26 +82,37 @@ script user edited accordingly.
 
 # Technical characteristics
 
-A DKM has several characteristics and  requirements:
+A DKM has several characteristics and requirements:
 
-* It's a set of classes describing a model and at least one kind of PlacedMorph representing the main view of the model the user will operate with.
+* It's a set of classes describing a model and at least one kind of
+  PlacedMorph to represent its view. This view is plugged in an end
+  user document.
 
-* Instance of the model are created by code. At minimum one line of code (i.e. `VerbTableMorph newOn: 'fill'`) or a several lines Smalltalk script using the dedicated DSL of the model (e.g. DrGeo Smalltalk script). This is this view instance dragged and dropped in the page of document.
+* A specific instance of a DKM is described by a script. The script
+  can be as short as one line of code (i.e. `VerbTableMorph newOn:
+  'fill'`) or several lines of code. A script is written in Smalltalk
+  with the dedicated DKM's DSL (e.g. see examples above).
 
-* From the page the model instance was dropped, it is possible to edit the script used to create the instance to redefine it: literally replacing the existing model instance by a new instance from the edited script.
+* A DKM instance inserted in a document can be edited any time, its
+  view is then modified accordingly. It is done by invocation of the
+  DKM script editor.
 
-* **The dynamic view can be annotated! Here a text editor with pen and
-  highlighter annotations. The annotations are attached to the view,
-  and move and rotate with it. When the document is scaled, the
-  annotations scale accordingly**. The concept is to give the freedom
-  to the user to write notes.
+
+* **A DKM view can be annotated!** Here a text editor DKM was
+  annotated with a pen and a highlighter. The handwritten annotations
+  are attached to the view, and move and rotate with it. When the
+  document is scaled, the annotations scale accordingly.
 
 <img src="https://static.mamot.fr/media_attachments/files/113/896/653/214/030/283/original/e771e9a2057a6ccd.png" alt="Annotated text editor" width=300 />
 
-* The edited instance by script can be used as model for later use by dragging and dropping back it in a Flap.
+* A DKM instance can be saved in the user's DKM library.
 
-* It has an icon and a textual description
+* Each DKM model comes with an icon and textual descriptions
 
-* It can be load/saved from disk, from an archive
+* DKM instances can be loaded/saved from a library and shared among
+  user. There are simple text script.
 
-It contains a model, icon; one or several scripts, each one represented as a FlapItem in a Flap.
+
+The package DKM-Core is the minimal prerequisite to develop additional
+DKM https://github.com/istoa-eu/app/tree/main/src/dkm
+
