@@ -16,40 +16,63 @@ The user edits the model in the script editor at the left and gets the resulting
 
 <img src="./images/drgeo2.png" width=400 />
 
-Once edited, the script is added to the user document:
+Once edited, the DKM view is updated in the user document. The user can
+then interact with the DKM view. Here it is an interactive geometry
+framework where the user drags the geometric objects and observes
+the behavior of the whole geometric sketch:
 
 <img src="./images/drgeo1.png" width=400 />
 
-Script and sketch can be complex:
+At any time, the user is free to edit again a DKM script, to adjust
+its contents. With the pointer tool selected, hovering a border of a
+DKM view makes its halo icons to emerge; the left edit button opens
+the DKM script editor:
+
+<img src="./images/drgeo3.png" width=400 />
+
+
+Script and sketch can be complex. Here a randomized variation of the
+Sierpinski square:
 
 <img src="https://static.mamot.fr/media_attachments/files/112/570/486/116/968/458/original/d0bf0c17e4be5a98.png" alt="The script model and the resulting dynamic view" width=400 />
 
 ## Text editor
-A text editor model with style capabilities instantiated from a small
-script is a valuable DKM.
 
-A French language teacher can create text exercise:
+A text editor model with style capabilities proves to be a valuable
+DKM. At first it may seem odd to have a text editor as a DKM but
+scripting text and style occurred to be valuable.
+
+An example of a french text turned as a conjugation exercise, with
+styled subject and verbs:
 
 <img src="./images/text1.png" width=400 />
+
+The example above also illustrate how a DKM view can be user hand
+annotated with the highlighter or the pen.
 
 This exercise is described with the dedicated script on the Text DKM:
 
 <img src="./images/text2.png" width=400 />
 
-AI with appropriate training can help to write these scripts. The
-`brain` icon provides the appropriate prompt of each DKM.
+Editing such script can be tedious but AI proved to be a valuable
+aid. Indeed, AI with appropriate training can write these scripts. The
+`brain` button, in the DKM script editor, generates the appropriate
+prompt, specific to each DKM.
 
 ## Timeline
-Timeline is another neat example of DKM. We also illustrate here how
-AI empowers the user, to both achieve what is wanted and also to
-foster computer literacy, particularly in programming.
+
+Timeline is another neat example of a DKM, interestingly empowered
+with AI, to both retrieve historical events and edit the associated
+script.
+
+Again, a timeline is described with a dedicated and simple DSL. From
+the document, the dynamic timeline can be reedited at any time.
 
 <img src="./images/timelineEdit.png" width=400 />
 
-This timeline is computed from a dedicated and simple DSL. From the document, the dynamic timeline can be reedited at any time.
-
-The DSL is so simple that an AI can learn to use it from an
-example. Then when asking to create a timeline as "Give me another timeline for the 10 most important battles of Alexander the great". It suggests:
+The DSL is so simple that an AI can learn to use it from an example or
+an appropriate prompt. With the request: "Give me another timeline for
+the 10 most important battles of Alexander the great". It suggests:
 
 ```smalltalk
 Timeline title: 'Major Battles of Alexander the Great' ::
@@ -65,27 +88,25 @@ Timeline title: 'Major Battles of Alexander the Great' ::
 	addEvent: 'Siege of Mallia. Alexander is severely wounded in a siege against the Malli tribe during his march south.' on: '-326.11.1';
 	unshrink ;
 	width: 4;
-	color: Color gold;
+	color: Color yellow;
 	view
 ```
-
-It only got wrong ``Color gold``, gold is not a color in Cuis-Smalltalk.
 
 The resulting timeline:
 
 ![Ten greatest battle of Alexander the Great](https://static.mamot.fr/media_attachments/files/115/356/691/735/237/920/original/189661d13dc24c40.png)
 
-Therefore, the user can learn simple programming assisted by an AI. Of
-course the suggested historical data should be double checked and the
-script user edited accordingly.
+The user can learn simple programming assisted with an AI. Of course
+the suggested historical data should be double checked and the script
+edited accordingly.
 
 
 # Technical characteristics
 
-A DKM has several characteristics and requirements:
+A DKM owns several characteristics and follow some requirements:
 
 * It's a set of classes describing a model and at least one kind of
-  PlacedMorph to represent its view. This view is plugged in an end
+  PlacedMorph to represent its view. This view is plugged in the end
   user document.
 
 * A specific instance of a DKM is described by a script. The script
@@ -94,8 +115,8 @@ A DKM has several characteristics and requirements:
   with the dedicated DKM's DSL (e.g. see examples above).
 
 * A DKM instance inserted in a document can be edited any time, its
-  view is then modified accordingly. It is done by invocation of the
-  DKM script editor.
+  view is then modified accordingly. It is done by the invocation of
+  the DKM script editor.
 
 
 * **A DKM view can be annotated!** Here a text editor DKM was
@@ -105,14 +126,17 @@ A DKM has several characteristics and requirements:
 
 <img src="https://static.mamot.fr/media_attachments/files/113/896/653/214/030/283/original/e771e9a2057a6ccd.png" alt="Annotated text editor" width=300 />
 
-* A DKM instance can be saved in the user's DKM library.
+* A DKM instance can be saved in the user's DKM library, for later
+  resuse.
 
-* Each DKM model comes with an icon and textual descriptions
+* Each DKM model comes with an icon, a textual descriptions, an
+  example and a text prompt for AI training.
 
-* DKM instances can be loaded/saved from a library and shared among
-  user. There are simple text script.
+* DKM instances can be loaded and saved from the user library. They
+  can be shared among users, as simple text script.
 
 
-The package DKM-Core is the minimal prerequisite to develop additional
-DKM https://github.com/istoa-eu/app/tree/main/src/dkm
+The [Cuis-Smalltalk](http://cuis.st) package **DKM-Core** is the minimal
+prerequisite to develop additional DKM
+https://github.com/istoa-eu/app/tree/main/src/dkm
 
