@@ -1,11 +1,28 @@
 # Dynamic Knowledge Models
 
-A Dynamic Knowledge Model (DKM) is a model representing a media of some knowledge you can interact with. Two basic examples of DKM are a digital image in very high resolution and a music score. The images are numerous in a paper textbook, however, contrary to digital image, you can't interact with to zoom-in to discover additional details.
+A Dynamic Knowledge Model (DKM) is a model representing a media of
+some knowledge you can interact with. A basic example of DKM is a
+digital image in very high resolution. While images are numerous in a
+paper textbook, your interaction with them are limited: you can't
+really zoom-in to discover additional details, may be using a
+magnifier but it's limited; in the contrary, with a digital image you
+can zoom-in and discover additional details.
 
-A more elaborated example of a DKM, illustrating more precisely its model dimension, is a [DrGeo](http://gnu.org/s/dr-geo) geometric sketch. Described with a script, the user will insert it as an interactive view in her document, along handwritten notes. The user could then interact into this view, dragging objects to observe what is happening and discovering behavior to engage in new learning.
+A more elaborated example of a DKM, illustrating more precisely its
+model dimension, is a [DrGeo](http://gnu.org/s/dr-geo) geometric
+sketch. Described with a script, the user will insert it as an
+interactive view in her document, along handwritten notes. The user
+can then interact with the view, dragging objects to observe what is
+happening and discovering behavior to engage in new learning.
 
-The model dimension in a given DKM is what makes it versatile, with one you can design a lot of different interactive contents. It relies on the facilities provided by Oriented Object Programming, as explained by [Adele Goldberg](https://youtu.be/IGNiH85PLVg?si=HpbUQNGj1SU6rfwj&t=860).
-Technically, all these views are [Cuis](http://cuis.st)'Morph instances representing a view of the underneath model. The Morphs offer a common way to interact and to integrate in the handwritten document.
+The model dimension in a given DKM is what makes it versatile, with
+one you can design a lot of different interactive contents. It relies
+on the facilities provided by Oriented Object Programming, as
+explained by [Adele
+Goldberg](https://youtu.be/IGNiH85PLVg?si=HpbUQNGj1SU6rfwj&t=860).
+Technically, all these views are [Cuis](http://cuis.st)' Morph
+instances representing a view of the underneath model. A Morph offer a
+common way to interact and to integrate it an end user document.
 
 # Examples
 
@@ -16,16 +33,16 @@ The user edits the model in the script editor at the left and gets the resulting
 
 <img src="./images/drgeo2.png" width=400 />
 
-Once edited, the DKM view is updated in the user document. The user can
-then interact with the DKM view. Here it is an interactive geometry
-framework where the user drags the geometric objects and observes
-the behavior of the whole geometric sketch:
+Once edited and validated, the DKM view is updated in the user
+document. The user can then interact with this view. Below, it is an
+interactive geometry sketch where the user drags the objects and
+observes the behavior of the whole sketch:
 
 <img src="./images/drgeo1.png" width=400 />
 
 At any time, the user is free to edit again a DKM script, to adjust
 its contents. With the pointer tool selected, hovering a border of a
-DKM view makes its halo icons to emerge; the left edit button opens
+DKM view makes its halo icons to emerge; the right edit button opens
 the DKM script editor:
 
 <img src="./images/drgeo3.png" width=400 />
@@ -38,8 +55,8 @@ Sierpinski square:
 
 ## Text editor
 
-A text editor model with style capabilities proves to be a valuable
-DKM. At first it may seem odd to have a text editor as a DKM but
+A text editor model with style capabilities proved to be a valuable
+DKM. At first, it seems odd to have a text editor model as a DKM but
 scripting text and style occurred to be valuable.
 
 An example of a french text turned as a conjugation exercise, with
@@ -47,32 +64,32 @@ styled subject and verbs:
 
 <img src="./images/text1.png" width=400 />
 
-The example above also illustrate how a DKM view can be user hand
+The example above also illustrates how a DKM view can be hand
 annotated with the highlighter or the pen.
 
-This exercise is described with the dedicated script on the Text DKM:
+Again, this text exercise is described by a script, using the specific
+Text Editor DKM's DSL:
 
 <img src="./images/text2.png" width=400 />
 
 Editing such script can be tedious but AI proved to be a valuable
-aid. Indeed, AI with appropriate training can write these scripts. The
-`brain` button, in the DKM script editor, generates the appropriate
-prompt, specific to each DKM.
+aid. Indeed, AI with appropriate training can write such script; in
+fact the example above was written by an AI with appropriate
+instructions. The `brain` button, in the DKM script editor, generates
+the specific prompt to a DKM.
 
 ## Timeline
 
 Timeline is another neat example of a DKM, interestingly empowered
 with AI, to both retrieve historical events and edit the associated
-script.
-
-Again, a timeline is described with a dedicated and simple DSL. From
-the document, the dynamic timeline can be reedited at any time.
+script. Again, a timeline is described with a dedicated and simple DSL.
 
 <img src="./images/timelineEdit.png" width=400 />
 
 The DSL is so simple that an AI can learn to use it from an example or
 an appropriate prompt. With the request: "Give me another timeline for
-the 10 most important battles of Alexander the great". It suggests:
+the 10 most important battles of Alexander the great". It suggests the
+script:
 
 ```smalltalk
 Timeline title: 'Major Battles of Alexander the Great' ::
@@ -111,7 +128,7 @@ A DKM owns several characteristics and follow some requirements:
 
 * A specific instance of a DKM is described by a script. The script
   can be as short as one line of code (i.e. `VerbTableMorph newOn:
-  'fill'`) or several lines of code. A script is written in Smalltalk
+  'remplir'`) or several lines of code. A script is written in Smalltalk
   with the dedicated DKM's DSL (e.g. see examples above).
 
 * A DKM instance inserted in a document can be edited any time, its
@@ -140,3 +157,5 @@ The [Cuis-Smalltalk](http://cuis.st) package **DKM-Core** is the minimal
 prerequisite to develop additional DKM
 https://github.com/istoa-eu/app/tree/main/src/dkm
 
+To experiment with the developed DKMs, try out the [iStoa simulation
+environment](http://www.istoa.eu/).
